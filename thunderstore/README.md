@@ -4,11 +4,12 @@ When your health runs low, **the edges of the screen glow red and beat like a he
 stronger and faster the lower it gets, like in many games.
 
 - Starts below **35 %** health: a faint red tint at first, a dense red frame near zero.
-- **Pulses like a heartbeat** - "lub-dub", from 60 to 120 beats a minute as you weaken.
+- **Swells softly like a heartbeat** - "lub-dub", from 45 to 80 beats a minute as you weaken.
 - **Flashes when you take a hit** at low health.
 - **Optional heartbeat sound** below 15 % (off by default).
 - Fades in and out smoothly; hidden while dead, sleeping, teleporting or loading.
-- Sits under the HUD's bars and scales with the UI. Stays when you hide the HUD (Ctrl+F3) -
+- Drawn under the whole HUD, so bars, hotbar and windows stay clear; HudLayout doesn't
+  pick it up. Stays when you hide the HUD (Ctrl+F3) -
   it's a warning - unless you turn on `HideWithHud`.
 
 Everything is adjustable in `BepInEx/config/j1ga.healthpulse.cfg` or in-game with
@@ -20,8 +21,7 @@ server need nothing. No Harmony patches, nothing sent over the network.
 
 ## Compatibility
 
-Tested with Valheim 1.0.16, BepInEx 5.4.23.5 (BepInExPack_Valheim 5.4.2351). Mods that
-replace the HUD's damage flash may move or hide the vignette with it.
+Tested with Valheim 1.0.16, BepInEx 5.4.23.5 (BepInExPack_Valheim 5.4.2351).
 
 ## Bugs and feedback
 

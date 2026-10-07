@@ -13,17 +13,19 @@ Version history is in `CHANGELOG.md`.
 
 - Below `Threshold` (35 % of your maximum health) a red vignette appears at the edges. At
   the threshold it is a faint tint; near zero it is a dense red frame.
-- It pulses like a heartbeat, two beats ("lub-dub"), from 60 to 120 beats a minute as your
-  health falls.
+- It swells softly like a heartbeat, two beats ("lub-dub"), from 45 to 80 beats a minute as
+  your health falls.
 - A hit flashes the edges briefly; the lower your health, the stronger the flash. Well above
   the threshold there is no flash, the game's own one is enough.
 - Everything eases in and out: heal up and it fades away instead of vanishing.
 - Not shown when you are dead, sleeping, teleporting or loading.
-- The vignette is an image in the game's own HUD canvas, right above the game's damage
-  flash: under the bars and windows of the HUD, scaled with the UI. By default it stays
-  when you hide the HUD (Ctrl+F3) - it is a warning; `HideWithHud` changes that.
-- The heartbeat sound (off by default) is two low thumps made in code, played with the
-  first beat of each heartbeat below 15 % health, through the game's sound volume.
+- The vignette is its own nested canvas in the game's GUI canvas, sorted just below it and
+  outside `hudroot`: the whole HUD is drawn over it, and HUD mods that pick up other mods'
+  objects in `hudroot` (HudLayout) leave it alone. By default it stays when you hide the HUD
+  (Ctrl+F3) - it is a warning; `HideWithHud` changes that.
+- The heartbeat sound (off by default) is two low thumps made in code - with overtones, so
+  headphones and small speakers play it too - with the first swell of each heartbeat below
+  15 % health, through the game's sound volume.
 - The texture and the sound are generated when the game starts; the mod ships no asset files.
 
 ## Compatibility
@@ -39,8 +41,8 @@ Tested with **Valheim 1.0.16** (network version 40), **BepInEx 5.4.23.5** (BepIn
 
 ## Known conflicts
 
-- Mods that replace the HUD's damage flash (`Hud.m_damageScreen`) may move or hide the
-  vignette with it.
+- None known. The vignette sits under the GUI canvas of the game; a mod that draws its own
+  full-screen layer under the HUD may share that spot.
 
 ## Bugs and feedback
 
@@ -69,13 +71,13 @@ apply at once.
 | 02 Look | `MaxStrength` | `0.75` | how opaque the edges get at the lowest health (0.1..1) |
 | 02 Look | `Color` | dark red | the colour, e.g. another one for colour blindness |
 | 02 Look | `Width` | `0.45` | how far the glow reaches in from the edges (0.2..0.8) |
-| 02 Look | `BeatsPerMinuteAtThreshold` | `60` | heart rate just below the threshold |
-| 02 Look | `BeatsPerMinuteAtZero` | `120` | heart rate near zero health |
+| 02 Look | `BeatsPerMinuteAtThreshold` | `45` | heart rate just below the threshold |
+| 02 Look | `BeatsPerMinuteAtZero` | `80` | heart rate near zero health |
 | 03 Hit flash | `Enabled` | `true` | flash the edges when a hit lands |
 | 03 Hit flash | `Strength` | `1` | how strong the flash is (0.1..2) |
 | 04 Heartbeat sound | `Enabled` | `false` | a heartbeat with the pulse at very low health |
 | 04 Heartbeat sound | `Threshold` | `15` | health in % below which it is heard |
-| 04 Heartbeat sound | `Volume` | `0.6` | its volume; the game's sound volume applies on top |
+| 04 Heartbeat sound | `Volume` | `0.8` | its volume; the game's sound volume applies on top |
 
 ## Building
 
