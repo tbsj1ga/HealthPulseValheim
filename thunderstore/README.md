@@ -6,7 +6,7 @@ stronger and faster the lower it gets, like in many games.
 - Starts below **35 %** health: a faint red tint at first, a dense red frame near zero.
 - **Swells softly like a heartbeat** - "lub-dub", from 45 to 80 beats a minute as you weaken.
 - **Flashes when you take a hit** at low health.
-- **Optional heartbeat sound** below 15 % (off by default).
+- **Heartbeat sound** below 15 % - experimental, off by default.
 - Fades in and out smoothly; hidden while dead, sleeping, teleporting or loading.
 - Drawn under the whole HUD, so bars, hotbar and windows stay clear; HudLayout doesn't
   pick it up. Stays when you hide the HUD (Ctrl+F3) -

@@ -23,7 +23,7 @@ Version history is in `CHANGELOG.md`.
   outside `hudroot`: the whole HUD is drawn over it, and HUD mods that pick up other mods'
   objects in `hudroot` (HudLayout) leave it alone. By default it stays when you hide the HUD
   (Ctrl+F3) - it is a warning; `HideWithHud` changes that.
-- The heartbeat sound (off by default) is two low thumps made in code - with overtones, so
+- The heartbeat sound (experimental, off by default) is two low thumps made in code - with overtones, so
   headphones and small speakers play it too - with the first swell of each heartbeat below
   15 % health, through the game's sound volume.
 - The texture and the sound are generated when the game starts; the mod ships no asset files.
