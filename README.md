@@ -7,6 +7,10 @@ heart** - stronger and faster the lower it gets - with a flash when a hit lands 
 like, a heartbeat you can hear. Client-side only: nothing is sent over the network and
 nothing is patched; other players and the server need nothing.
 
+![Low health: the edges pulse red, the HUD stays on top](https://raw.githubusercontent.com/tbsj1ga/HealthPulseValheim/main/docs/media/low-health.webp)
+
+*At 10 of 131 health: the edges pulse red, the HUD is drawn over the effect.*
+
 Version history is in `CHANGELOG.md`.
 
 ## How it works

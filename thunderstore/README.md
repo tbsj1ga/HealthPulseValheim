@@ -3,6 +3,10 @@
 When your health runs low, **the edges of the screen glow red and beat like a heart** -
 stronger and faster the lower it gets, like in many games.
 
+![Low health: the edges pulse red, the HUD stays on top](https://raw.githubusercontent.com/tbsj1ga/HealthPulseValheim/main/docs/media/low-health.webp)
+
+*Drawn under the HUD: health bar, hotbar and minimap stay clear. Works with HudLayout.*
+
 - Starts below **35 %** health: a faint red tint at first, a dense red frame near zero.
 - **Swells softly like a heartbeat** - "lub-dub", from 45 to 80 beats a minute as you weaken.
 - **Flashes when you take a hit** at low health.

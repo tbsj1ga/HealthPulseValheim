@@ -2,7 +2,7 @@
   "name": "HealthPulse",
   "version_number": "0.0.0",
   "website_url": "https://github.com/tbsj1ga/HealthPulseValheim",
-  "description": "At low health the edges of the screen glow red and beat like a heart - stronger and faster the lower it gets - with a flash on hits and an optional heartbeat sound. Client-side only.",
+  "description": "Low health warning: a red vignette pulses at the screen edges like a heartbeat when your HP is low - stronger and faster as health drops, with a damage flash on hits. Low HP screen effect, client-side.",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2350"
   ]
