@@ -25,7 +25,7 @@ server need nothing. No Harmony patches, nothing sent over the network.
 
 ## Compatibility
 
-Tested with Valheim 1.0.16, BepInEx 5.4.23.5 (BepInExPack_Valheim 5.4.2351).
+Tested with Valheim 1.0.20, BepInEx 5.4.23.5 (BepInExPack_Valheim 5.4.2351).
 
 ## Bugs and feedback
 
